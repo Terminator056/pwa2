@@ -16,7 +16,7 @@ function notifyMe() {
   // Sprawdźmy czy uprawnienia dla powiadomienia zostały nadane
   else if (Notification.permission === "granted") {
     // jeżeli są tworzymy powiadomienie
-    var notification = new Notification("Hi there!");
+    var notification = new Notification("Hello world!");
   }
 
   // W innym przypadku tworzymy zapytanie o uprawnienia
@@ -24,7 +24,7 @@ function notifyMe() {
     Notification.requestPermission(function (permission) {
       //Jeżeli użytkownik zaakceptuje tworzymy powiadomienie
       if (permission === "granted") {
-        var notification = new Notification("Hi there!");
+        var notification = new Notification("Hello world!");
       }
     });
   }
